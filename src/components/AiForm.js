@@ -26,7 +26,7 @@ export default function AiForm({ getData }) {
         return replaced.split(' ').join(' and ');
       };
       const data = {
-        prompt: `Write a positive thing about me using the word or words: ${stringConvert(input)}`,
+        prompt: `Write a positive thing about me with the word or words: ${stringConvert(input)}`,
         temperature: 0.8,
         max_tokens: 64,
         top_p: 1.0,
@@ -85,7 +85,7 @@ const Input = styled(TextField)`
   width: 300px;
 
   &:hover {
-    background-color: #ced4da;
+    background-color: transparent;
     border-color: white;
   }
 `;
@@ -96,5 +96,5 @@ const InputContainer = styled.div`
 `;
 
 const InputHeader = styled.h3`
-  color: #436a95;
+  color: black;
 `;

@@ -26,39 +26,31 @@ export default function IndividualCard({ eachCard }) {
       flipSpeedBackToFront={0.8}
       isFlipped={isFlipped}
       flipDirection='horizontal'>
-      <FrontCard
+      <Card
         sm={6}
         style={{ backgroundColor: '#436a95' }}
         onMouseEnter={() => setIsFlipped((prev) => !prev)}
         sx={{ maxWidth: 200 }}>
         <StyledCardContent>
           <h3>Your Positive Words:</h3>
-          <Front variant='body2'>{eachCard.words}</Front>
+          <Typography variant='body2'>{eachCard.words}</Typography>
         </StyledCardContent>
         <DoubleArrowRoundedIcon style={{ float: 'right', fill: 'white' }} />
-      </FrontCard>
+      </Card>
       {/* back */}
-      <BackCard
+      <Card
         sm={6}
         style={{ backgroundColor: '#436a95' }}
         onMouseLeave={() => setIsFlipped((prev) => !prev)}
         sx={{ maxWidth: 200 }}>
         <StyledCardContent>
           <h3>Positive Affirmation: </h3>
-          <Back variant='body2'>{textConvert(eachCard.choices[0].text)}</Back>
+          <Typography variant='body2'>{textConvert(eachCard.choices[0].text)}</Typography>
         </StyledCardContent>
-      </BackCard>
+      </Card>
     </ReactCardFlip>
   );
 }
-
-const Front = styled(Typography)``;
-
-const Back = styled(Typography)``;
-
-const FrontCard = styled(Card)``;
-
-const BackCard = styled(Card)``;
 
 const StyledCardContent = styled(CardContent)`
   color: white;

@@ -28,5 +28,6 @@ const HeaderText = styled.h1`
   padding: 0;
   margin: 0;
   text-align: center;
-  color: #436a95;
+  color: black;
+  margin-top: 1.5em;
 `;
