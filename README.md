@@ -7,7 +7,7 @@
 ## General Info
 
 Positive Affirmations is a small front end application that allows users to input a few positive words that they want to hear about themselves.
-Once inputting some words in, the OpenAI API creates first person, positive affirmations in sentences, usually starting with "I am," to build encouragement, confidence, and positivity for that user.
+Once inputting some words in, the OpenAI API creates first person, positive affirmations in sentences, usually starting with "I am," to build encouragement, confidence, and positivity for that user. While this project was done solely for the Shopify Front End internship, I had a great time using this API and building a small application.
 
 
 ## Technologies
