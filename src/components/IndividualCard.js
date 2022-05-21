@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import styled from 'styled-components';
 import ReactCardFlip from 'react-card-flip';
 import DoubleArrowRoundedIcon from '@mui/icons-material/DoubleArrowRounded';
+
 export default function IndividualCard({ eachCard }) {
   const [isFlipped, setIsFlipped] = useState(false);
   const textConvert = (str) => {

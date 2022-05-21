@@ -2,6 +2,7 @@ import { useState } from 'react';
 import AiForm from './AiForm';
 import TextList from './TextList';
 import styled from 'styled-components';
+
 function App() {
   const [textArr, setTextArr] = useState([]);
   const dataFromAPI = (textObj, words) => {
@@ -12,7 +13,7 @@ function App() {
     };
     setTextArr([...textArr, obj]);
   };
-  console.log(textArr);
+
   return (
     <div>
       <HeaderText>Feeling down? </HeaderText>
@@ -28,6 +29,5 @@ const HeaderText = styled.h1`
   padding: 0;
   margin: 0;
   text-align: center;
-  color: black;
   margin-top: 1.5em;
 `;

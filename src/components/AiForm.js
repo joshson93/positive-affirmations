@@ -56,7 +56,7 @@ export default function AiForm({ getData }) {
 
   return (
     <InputContainer>
-      <InputHeader>Input positive words to reignite your positivity!</InputHeader>
+      <h3>Input positive words to reignite your positivity!</h3>
       <form onSubmit={onSubmitHandler}>
         <Input
           onChange={inputHandler}
@@ -83,18 +83,9 @@ export default function AiForm({ getData }) {
 
 const Input = styled(TextField)`
   width: 300px;
-
-  &:hover {
-    background-color: transparent;
-    border-color: white;
-  }
 `;
 
 const InputContainer = styled.div`
   text-align: center;
   margin-bottom: 1em;
-`;
-
-const InputHeader = styled.h3`
-  color: black;
 `;

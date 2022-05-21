@@ -4,6 +4,7 @@ import uuid from 'react-uuid';
 import IndividualCard from './IndividualCard';
 import Grid from '@mui/material/Grid';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+
 export default function TextList({ data }) {
   return (
     <CardsContainer>
@@ -58,6 +59,7 @@ const pulse = keyframes`
     transform: scale(1);
   }
 `;
+
 const StyledHeart = styled(FavoriteIcon)`
   position: absolute;
   margin-left: 5px;
